@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">WatcHogs</string>
+    <string name="Enter_email">Enter Email</string>
+    <string name="login_to_your_account">Login to your account</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="dont_have_account">Dont have an account? Ragistor Now</string>
+    <string name="login">Login</string>
+    <string name="ragistor_to_your_account">Ragistor your account</string>
+    <string name="Enter_name">Enter Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="already_have_an_account">Already Have an account? Login Now</string>
+    <string name="select_your_type">Select Your Type</string>
+    <string name="signup">Sign Up</string>
+    <string name="enter_company_details">Enter Company Details</string>
+    <string name="Enter_billing_address">Enter Billing Address</string>
+    <string name="Enter_company_text_number">Enter Company Tax Number</string>
+    <string name="Enter_company_phone_number">Enter Company Phone Number</string>
+    <string name="Enter_country">Enter Country</string>
+    <string name="Enter_company_address">Enter Company Address</string>
+    <string name="Enter_company_name">Enter Company Name</string>
+    <string name="compnay_heading_to_select_company">"Select Company "</string>
+    <string name="delete">Delete</string>
+    <string name="add_check_points">Add Check Points</string>
+    <string name="tap_to_enter_and_time">Tap to enter date and time</string>
+    <string name="fill_out_following_info">Fill out following info</string>
+    <string name="save">SAVE</string>
+    <string name="Enter_title">Enter Title</string>
+    <string name="update">Update</string>
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

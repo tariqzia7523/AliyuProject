@@ -85,7 +85,7 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/button_selector"
                 android:textColor="@color/white"
-                android:text="Chat"
+                android:text="@string/chat"
                 android:textSize="@dimen/_12sdp"
                 android:layout_marginRight="@dimen/_5sdp"/>
             <Button
@@ -95,7 +95,7 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/button_selector"
                 android:textColor="@color/white"
-                android:text="Clear route"
+                android:text="@string/clear_route"
                 android:textSize="@dimen/_12sdp"
                 android:layout_marginLeft="@dimen/_5sdp"/>
 

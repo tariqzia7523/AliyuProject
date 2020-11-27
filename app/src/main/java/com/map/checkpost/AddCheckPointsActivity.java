@@ -73,7 +73,7 @@ public class AddCheckPointsActivity extends AppCompatActivity implements OnMapRe
         setContentView(R.layout.activity_add_check_points);
         getSupportActionBar().hide();
         progressDialog=new ProgressDialog(AddCheckPointsActivity.this);
-        progressDialog.setMessage("Please wait");
+        progressDialog.setMessage(getString(R.string.please_wait));
         firebaseUser= FirebaseAuth.getInstance().getCurrentUser();
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
@@ -231,7 +231,7 @@ public class AddCheckPointsActivity extends AppCompatActivity implements OnMapRe
             // TODO Auto-generated catch block
             e.printStackTrace();
             Toast.makeText(AddCheckPointsActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
-            return "No value found";
+            return getString(R.string.no_value_found);
         }
     }
 
@@ -286,7 +286,7 @@ public class AddCheckPointsActivity extends AppCompatActivity implements OnMapRe
                         progressDialog.dismiss();
                         checkPointsModels.add(checkPointsModel);
                         addListToMap();
-                        Toast.makeText(getApplicationContext(),"Check point Added",Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(),getString(R.string.check_point_added),Toast.LENGTH_LONG).show();
 
                     }
                 }).addOnFailureListener(new OnFailureListener() {

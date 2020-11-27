@@ -75,7 +75,7 @@ public class InboxFragment extends Fragment {
         // Inflate the layout for this fragment
         View v= inflater.inflate(R.layout.fragment_inbox, container, false);
         progressDialog=new ProgressDialog(getActivity());
-        progressDialog.setMessage("Please wait");
+        progressDialog.setMessage(getString(R.string.please_wait));
         firebaseUser= FirebaseAuth.getInstance().getCurrentUser();
         myRefChat = FirebaseDatabase.getInstance().getReference("Chats");
         myRefuser = FirebaseDatabase.getInstance().getReference("Users");

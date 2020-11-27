@@ -77,7 +77,7 @@ public class MainActivity extends FragmentActivity  {
 //        getSupportActionBar().hide();
         drawer = findViewById(R.id.drawer_layout);
         progressDialog=new ProgressDialog(MainActivity.this);
-        progressDialog.setMessage("Please wait");
+        progressDialog.setMessage(getString(R.string.please_wait));
         myRef = FirebaseDatabase.getInstance().getReference("Users");
         currentUser= FirebaseAuth.getInstance().getCurrentUser();
 

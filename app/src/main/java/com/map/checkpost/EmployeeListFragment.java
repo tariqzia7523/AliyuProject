@@ -65,7 +65,7 @@ public class EmployeeListFragment extends Fragment  {
 
         View v = inflater.inflate(R.layout.employee_fragment, container, false);
         progressDialog=new ProgressDialog(getActivity());
-        progressDialog.setMessage("Please Wait");
+        progressDialog.setMessage(getString(R.string.please_wait));
 
         try{
             curUserModel =(UserModel) getArguments().get("data");

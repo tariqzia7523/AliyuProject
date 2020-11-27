@@ -68,7 +68,7 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback, Google
 
         View v = inflater.inflate(R.layout.home_fragment, container, false);
         progressDialog=new ProgressDialog(getActivity());
-        progressDialog.setMessage("Please Wait");
+        progressDialog.setMessage(getString(R.string.please_wait));
 //        myRefselectedQuestions = FirebaseDatabase.getInstance().getReference("SelectedQuestions");
         firebaseUser= FirebaseAuth.getInstance().getCurrentUser();
         myRefPosts = FirebaseDatabase.getInstance().getReference("Posts");
@@ -173,7 +173,7 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback, Google
                             curLocation = location;
 
                             LatLng sydney = new LatLng(location.getLatitude(), location.getLongitude());
-                            currentMarkerOption = new MarkerOptions().position(sydney).title("Current Location")
+                            currentMarkerOption = new MarkerOptions().position(sydney).title(getString(R.string.current_location))
                                     .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED));
 //                                    .icon(BitmapDescriptorFactory.fromResource(R.drawable.yellow_32));
                             mMap.addMarker(currentMarkerOption);

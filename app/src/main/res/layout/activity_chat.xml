@@ -84,7 +84,7 @@
                 android:layout_marginRight="@dimen/_10sdp"
                 android:layout_marginLeft="@dimen/_10sdp"
                 android:background="@null"
-                android:hint="Enter Message hare"/>
+                android:hint="@string/enter_message_hare"/>
 
 
         </RelativeLayout>

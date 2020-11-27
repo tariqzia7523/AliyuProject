@@ -70,7 +70,7 @@ public class CheckPointsFragment extends Fragment  {
 
         final View v = inflater.inflate(R.layout.fragment_check_points, container, false);
         progressDialog=new ProgressDialog(getActivity());
-        progressDialog.setMessage("Please Wait");
+        progressDialog.setMessage(getString(R.string.please_wait));
 //        myRefselectedQuestions = FirebaseDatabase.getInstance().getReference("SelectedQuestions");
         firebaseUser= FirebaseAuth.getInstance().getCurrentUser();
 
@@ -234,7 +234,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
                 myRefCheckPoints.child(userModel.getCompanyId()).child(data.get(position).getId()).removeValue().addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {
-                        Toast.makeText(getContext(),"check point deleted",Toast.LENGTH_LONG).show();
+                        Toast.makeText(getContext(),getString(R.string.check_point_added),Toast.LENGTH_LONG).show();
                     }
                 });
             }

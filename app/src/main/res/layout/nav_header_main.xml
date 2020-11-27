@@ -50,15 +50,15 @@
             android:layout_height="@dimen/_15sdp"
             android:layout_centerVertical="true"
             android:src="@drawable/home"/>
+
         <TextView
             android:id="@+id/home_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
             android:layout_marginLeft="@dimen/_30sdp"
-            android:text="Home"
+            android:text="@string/home"
             android:textColor="@color/black"
-            android:textSize="@dimen/_12sdp"/>
+            android:textSize="@dimen/_12sdp" />
 
 
     </RelativeLayout>
@@ -74,15 +74,15 @@
             android:layout_centerVertical="true"
             android:src="@drawable/email"
             />
+
         <TextView
             android:id="@+id/inbox_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
             android:layout_marginLeft="@dimen/_30sdp"
-            android:text="Inbox"
+            android:text="@string/inbox"
             android:textColor="@color/black"
-            android:textSize="@dimen/_12sdp"/>
+            android:textSize="@dimen/_12sdp" />
 
 
     </RelativeLayout>
@@ -104,7 +104,7 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_marginLeft="@dimen/_30sdp"
-            android:text="Employee list"
+            android:text="@string/employee_list"
             android:textColor="@color/black"
             android:textSize="@dimen/_12sdp"/>
 
@@ -128,7 +128,7 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_marginLeft="@dimen/_30sdp"
-            android:text="Check points"
+            android:text="@string/check_points"
             android:textColor="@color/black"
             android:textSize="@dimen/_12sdp"/>
 
@@ -152,7 +152,7 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_marginLeft="@dimen/_30sdp"
-            android:text="My Company"
+            android:text="@string/my_company"
             android:textColor="@color/black"
             android:textSize="@dimen/_12sdp"/>
 
@@ -173,7 +173,7 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_marginLeft="@dimen/_30sdp"
-            android:text="Sign Out"
+            android:text="@string/sign_out"
             android:textColor="@color/red"
             android:textSize="@dimen/_12sdp"/>
 

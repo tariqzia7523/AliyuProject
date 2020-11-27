@@ -47,7 +47,7 @@ public class CompanyProfilesFragment extends Fragment  {
 
         View v = inflater.inflate(R.layout.fragment_company_profile, container, false);
         progressDialog=new ProgressDialog(getActivity());
-        progressDialog.setMessage("Please Wait");
+        progressDialog.setMessage(getString(R.string.please_wait));
 //        myRefselectedQuestions = FirebaseDatabase.getInstance().getReference("SelectedQuestions");
         firebaseUser= FirebaseAuth.getInstance().getCurrentUser();
         companyName=v.findViewById(R.id.company_name);
@@ -112,7 +112,7 @@ public class CompanyProfilesFragment extends Fragment  {
                             companyName.getText().toString().isEmpty() ||
                             companyPhoneNumber.getText().toString().isEmpty() ||
                             companyTextNumber.getText().toString().isEmpty()){
-                        Toast.makeText(getActivity(),"Please add all data",Toast.LENGTH_LONG).show();
+                        Toast.makeText(getActivity(),getString(R.string.please_add_all_data),Toast.LENGTH_LONG).show();
                         return;
 
                     }
@@ -128,7 +128,7 @@ public class CompanyProfilesFragment extends Fragment  {
                         @Override
                         public void onSuccess(Void aVoid) {
                             progressDialog.dismiss();
-                            Toast.makeText(getActivity(),"Data updated",Toast.LENGTH_LONG).show();
+                            Toast.makeText(getActivity(),getString(R.string.data_updated),Toast.LENGTH_LONG).show();
                         }
                     });
                 }

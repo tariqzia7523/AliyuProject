@@ -70,7 +70,7 @@ public class SignUpActivity extends AppCompatActivity {
         companyNames=new ArrayList<>();
         compnayIds=new ArrayList<>();
         progressDialog=new ProgressDialog(SignUpActivity.this);
-        progressDialog.setMessage("Please Wait");
+        progressDialog.setMessage(getString(R.string.please_wait));
         mStorageRef = FirebaseStorage.getInstance().getReference();
         myRef = FirebaseDatabase.getInstance().getReference("Users");
         myRefCompany = FirebaseDatabase.getInstance().getReference("Company");
@@ -148,7 +148,7 @@ public class SignUpActivity extends AppCompatActivity {
                 if(pass.equals(conPass)){
                     if(!name.isEmpty() || !email.isEmpty()){
                         if(imageUri==null){
-                            Toast.makeText(getApplicationContext(),"Please select an image too.",Toast.LENGTH_LONG).show();
+                            Toast.makeText(getApplicationContext(),getString(R.string.add_an_image_to),Toast.LENGTH_LONG).show();
                             return;
                         }
                         if(selectedOptionFlag==1){
@@ -159,7 +159,7 @@ public class SignUpActivity extends AppCompatActivity {
                                     companyPhoneNumber.getText().toString().isEmpty() ||
                                     compnayTextNumber.getText().toString().isEmpty() ||
                                     companybillingAddress.getText().toString().isEmpty()){
-                                Toast.makeText(getApplicationContext(),"Please Add all company data",Toast.LENGTH_LONG).show();
+                                Toast.makeText(getApplicationContext(),getString(R.string.add_company_data),Toast.LENGTH_LONG).show();
                                 return;
                             }
                         }
@@ -242,7 +242,7 @@ public class SignUpActivity extends AppCompatActivity {
                                         } else {
                                             // If sign in fails, display a message to the user.
                                             Log.w(TAG, "createUserWithEmail:failure", task.getException());
-                                            Toast.makeText(SignUpActivity.this, "Authentication failed.",
+                                            Toast.makeText(SignUpActivity.this, getString(R.string.authentation_failed),
                                                     Toast.LENGTH_SHORT).show();
                                             progressBar.setVisibility(View.GONE);
                                             signuptext.setVisibility(View.VISIBLE);
@@ -256,11 +256,11 @@ public class SignUpActivity extends AppCompatActivity {
 //                        UserModel userModel=new UserModel(name,email,gender,age)
 
                     }else{
-                        Toast.makeText(getApplicationContext(),"Please add all data",Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(),getString(R.string.please_add_all_data),Toast.LENGTH_LONG).show();
 
                     }
                 }else{
-                    Toast.makeText(getApplicationContext(),"Password does not match",Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(),getString(R.string.password_not_match),Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -304,11 +304,11 @@ public class SignUpActivity extends AppCompatActivity {
                 imageView.setImageBitmap(selectedImage);
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
-                Toast.makeText(SignUpActivity.this, "Something went wrong", Toast.LENGTH_LONG).show();
+                Toast.makeText(SignUpActivity.this, getString(R.string.something_went_wrong), Toast.LENGTH_LONG).show();
             }
 
         }else {
-            Toast.makeText(SignUpActivity.this, "You haven't picked Image",Toast.LENGTH_LONG).show();
+//            Toast.makeText(SignUpActivity.this, "You haven't picked Image",Toast.LENGTH_LONG).show();
         }
     }
 

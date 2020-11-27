@@ -306,7 +306,7 @@ public class GoogleService extends Service {
         }
 
         builder.setContentTitle(getString(R.string.app_name));
-        builder.setContentText("is getting your live location");
+        builder.setContentText(getString(R.string.is_getting_live_location));
         Uri notificationSound = RingtoneManager.getActualDefaultRingtoneUri(this, RingtoneManager.TYPE_NOTIFICATION);
         builder.setSound(notificationSound);
         builder.setAutoCancel(true);
@@ -352,7 +352,7 @@ public class GoogleService extends Service {
     @Override
     public void onDestroy() {
         super.onDestroy();
-        Toast.makeText(getApplicationContext(),"service stoped",Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(),getString(R.string.service_stoped),Toast.LENGTH_LONG).show();
     }
 
 

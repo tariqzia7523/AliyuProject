@@ -52,7 +52,7 @@ public class ChatActivity extends AppCompatActivity {
         setContentView(R.layout.activity_chat);
         getSupportActionBar().hide();
         progressDialog=new ProgressDialog(ChatActivity.this);
-        progressDialog.setMessage("Please wait");
+        progressDialog.setMessage(getString(R.string.please_wait));
         otherUserName=findViewById(R.id.user_name);
         profileImage=findViewById(R.id.profile_image);
         try{
@@ -124,7 +124,7 @@ public class ChatActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(editText.getText().toString().isEmpty()){
-                    Toast.makeText(getApplicationContext(),"Please add message",Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(),getString(R.string.please_add_message),Toast.LENGTH_LONG).show();
                 }else{
                     ChatModel chatModel=new ChatModel();
                     chatModel.setMessage(editText.getText().toString());
